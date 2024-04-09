@@ -1,6 +1,6 @@
 # Django Custom Admin
 
-![Project Logo](../images/logo.png)
+![Project Logo](images/logo.png)
 
 A custom admin interface providing backend via DRF and frontend via Vue 2 and Element UI.
 

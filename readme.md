@@ -1,3 +1,0 @@
-```
-mdbook serve --open
-```
