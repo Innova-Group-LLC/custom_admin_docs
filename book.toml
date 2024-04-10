@@ -4,3 +4,10 @@ authors = []
 language = "en"
 multilingual = false
 src = "src"
+
+[preprocessor]
+
+[output]
+
+[output.html]
+git-repository-url = "httpshttps://github.com/Innova-Group-LLC/custom_admin"

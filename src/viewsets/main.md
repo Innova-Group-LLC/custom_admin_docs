@@ -44,7 +44,7 @@ Viewset without update option.
 Only list view (without detail)
 
 - `BaseAdminDataViewSet`\
-Data oriented viewset
+Non ORM data oriented viewset
 
 ## Serializers
 
