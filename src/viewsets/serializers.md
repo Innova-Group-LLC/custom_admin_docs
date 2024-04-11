@@ -25,7 +25,7 @@ Calls `OrderedModel.to()` method to effect a re-ordering.
 
 `order_field` can be specified or `model.order_field_name` will be used.
 
-# Serizlisers fields
+# Serializers fields
 
 ## AdminPrimaryKeyRelatedField
 
@@ -62,7 +62,7 @@ def filter_currency_info(qs, form_data: dict, request=None):
         return qs
 
     return Currency.objects.filter(is_active=True)
-    
+
 
 class NodeAdminSerializer(AdminModelSerializer):
     currencies = fields.AdminPrimaryKeyRelatedField(

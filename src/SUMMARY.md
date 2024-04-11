@@ -10,7 +10,7 @@
 - [Viewsets]()
   
   - [Admin viewsets](viewsets/main.md)
-  - [Serizlisers](viewsets/serizlisers.md)
+  - [Serializers](viewsets/serializers.md)
 
 - [Related inlines]()
 

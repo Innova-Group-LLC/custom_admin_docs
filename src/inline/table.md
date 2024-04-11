@@ -3,9 +3,11 @@
 ![graph](table.png)
 
 ```python
+from django_filters import rest_framework as filters
+
 class LogsFilterSet(BaseAdminFilterSet):
-    search_text = drf_filters.CharFilter(label=_('Search'))
-    date = drf_filters.DateFromToRangeFilter(label=_('Time range'))
+    search_text = filters.CharFilter(label=_('Search'))
+    date = filters.DateFromToRangeFilter(label=_('Time range'))
 ```
 
 ```python
