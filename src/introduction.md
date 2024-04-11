@@ -4,7 +4,8 @@
 
 A custom admin interface providing backend via DRF and frontend via Vue 2 and Element UI that tries Keep It Simple.
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Innova-Group-LLC/custom_admin)
+[![PyPI version](https://badge.fury.io/py/django-customvueadmin.svg)](https://badge.fury.io/py/django-customvueadmin)
+[![GitHub stars](https://img.shields.io/github/stars/Innova-Group-LLC/custom_admin)](https://github.com/Innova-Group-LLC/custom_admin)
 
 ## Features
 

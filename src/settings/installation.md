@@ -2,7 +2,7 @@
 
 ## Dependency installation:
 ```
-pip install django-custom-admin
+pip install django-customvueadmin
 ```
 
 ## Django settings:
