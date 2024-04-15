@@ -5,22 +5,18 @@ Module containing viewset classes: `custom_admin.api.views`
 ## Example:
 
 ```python
-from custom_admin.api.views import ReadOnlyBaseAdminViewSet
+from custom_admin.api.views.base_admin_viewset import BaseAdminViewSet
+from django.contrib.auth.models import Group
+from django.utils.translation import gettext_lazy as _
 
-class LastVisitAdminViewSet(ReadOnlyBaseAdminViewSet):
-    queryset = LastVisit.objects.all()
-    search_fields = ['id', 'user__nickname', 'ip__ip', 'device__os', 'device__browser', 'language']
-    filterset_fields = ('user', 'ip', 'device', 'datetime')
+
+class GroupAdminViewSet(BaseAdminViewSet):
+    title = _('Roles')
+    queryset = Group.objects.all()
+    search_fields = ('name', )
     list_display = (
         'id',
-        'user_username',
-        'user_id',
-        'ip',
-        'os',
-        'browser',
-        'language',
-        'datetime',
-        'role'
+        'name',
     )
 ```
 

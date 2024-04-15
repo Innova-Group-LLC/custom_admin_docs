@@ -1,6 +1,14 @@
 # Table
 
+Viewset action with inline_type `InlinesType.TABLE`.
+
+Must return `InlineTableResult` instance.
+
+You can use `django.core.paginator.Paginator` for paginated response.
+
 ![graph](table.png)
+
+## Example
 
 ```python
 from django_filters import rest_framework as filters
@@ -11,6 +19,9 @@ class LogsFilterSet(BaseAdminFilterSet):
 ```
 
 ```python
+from django.core.paginator import Paginator
+
+...
     @action(
         name=_('Logs'),
         methods=['post'],

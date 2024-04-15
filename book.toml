@@ -10,4 +10,4 @@ src = "src"
 [output]
 
 [output.html]
-git-repository-url = "httpshttps://github.com/Innova-Group-LLC/custom_admin"
+git-repository-url = "https://github.com/Innova-Group-LLC/custom_admin"

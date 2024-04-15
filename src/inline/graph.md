@@ -1,6 +1,16 @@
 # Graph
 
+Viewset action with inline_type `InlinesType.GRAPH`.
+
+Must return `InlineGraphResult` instance. Can contain many charts with ChartData.
+
+Uses `chartjs` library to output graphs.
+
+[ChartJS](https://www.chartjs.org/)
+
 ![graph](graph.png)
+
+## Example
 
 ```python
     @action(
