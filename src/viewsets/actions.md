@@ -2,13 +2,29 @@
 
 In viewset `actions` list, you can specify functions that can be called from the list view.
 
-Available parameters:
+You can specify settings through decorator `custom_admin.api.admin_action`.
+
+Available settings:
 
 - `short_description`\
-The name that will be displayed in the list.
+The name that will be displayed as title.
 
 - `form_serializer`\
 Optional parameter for action form output.
+
+- `inline_type`\
+Whether to display the button in the "Operations" section.
+
+![action-inline](action-inline.png)
+
+- `inline_only`\
+If this option is enabled - the action can be executed only by pressing the button for one record.
+
+- `description`\
+The text that will be displayed next to the title on the popup form.
+
+![action-description](action-description.png)
+
 
 ## Response messages format
 
