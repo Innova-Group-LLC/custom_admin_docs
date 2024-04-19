@@ -63,6 +63,12 @@ class AdminSendMessageSerializer(AdminSerializer):
 ```
 
 ```python
+from custom_admin.api import admin_action
+
+@admin_action(
+    short_description=_('Send a message'),
+    form_serializer=AdminSendMessageSerializer,
+)
 def send_message_action(view, request, queryset, form_data):
     serializer = AdminSendMessageSerializer(data=form_data)
     serializer.is_valid(raise_exception=True)
@@ -70,9 +76,6 @@ def send_message_action(view, request, queryset, form_data):
     message = serializer.validated_data['message']
     ...
     return 'Success', 200
-
-send_message_action.short_description = _('Send a message')
-send_message_action.form_serializer = AdminSendMessageSerializer
 ```
 
 ```python

@@ -18,6 +18,9 @@ You can use the django manage command to show all sets of admin views:\
 - `inline_slug`\
 The unique string that will be used in the url.
 
+- `icon`\
+Icon. [List](https://element.eleme.io/#/en-US/component/icon)
+
 - `back_relation_name`\
 Optional. It's necessary for ORM relations. You need to specify a field or lookup for the reverse filter.
 
