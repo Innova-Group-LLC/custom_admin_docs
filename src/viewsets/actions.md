@@ -2,7 +2,7 @@
 
 In viewset `actions` list, you can specify functions that can be called from the list view.
 
-You can specify settings through decorator `custom_admin.api.admin_action`.
+You can specify settings through decorator `custom_admin.api.admin_action`
 
 Available settings:
 
@@ -14,6 +14,8 @@ Optional parameter for action form output.
 
 - `inline_type`\
 Whether to display the button in the "Operations" section.
+
+This setting specifies the style of the button: [Button types](https://element.eleme.io/#/en-US/component/button)
 
 ![action-inline](action-inline.png)
 
