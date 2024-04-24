@@ -11,8 +11,8 @@
   
   - [Admin viewsets](viewsets/main.md)
   - [Serializers](viewsets/serializers.md)
+  - [Fixed columns](viewsets/fixed_columns.md)
   - [Serializer field groups](viewsets/groups.md)
-  - [Serializer fixed columns](viewsets/fixed_columns.md)
   - [Serializer field options](viewsets/field_options.md)
   - [Models settings](viewsets/models_settings.md)
   - [Actions](viewsets/actions.md)
