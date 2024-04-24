@@ -8,7 +8,7 @@ Uses `chartjs` library to output graphs.
 
 [ChartJS](https://www.chartjs.org/)
 
-![graph](graph.png)
+![graph](images/graph.png)
 
 ## Example
 

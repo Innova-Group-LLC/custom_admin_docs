@@ -17,7 +17,7 @@ Whether to display the button in the "Operations" section.
 
 This setting specifies the style of the button: [Button types](https://element.eleme.io/#/en-US/component/button)
 
-![action-inline](action-inline.png)
+![action-inline](images/action-inline.png)
 
 - `inline_only`\
 If this option is enabled - the action can be executed only by pressing the button for one record.
@@ -25,7 +25,7 @@ If this option is enabled - the action can be executed only by pressing the butt
 - `description`\
 The text that will be displayed next to the title on the popup form.
 
-![action-description](action-description.png)
+![action-description](images/action-description.png)
 
 
 ## Response messages format
@@ -57,7 +57,7 @@ return ['First message', 'Last message'], 200
 
 In `form_serializer` parameter you can pass instance of `AdminSerializer` to display the form before submitting the action.
 
-![form-action](form-action.png)
+![form-action](images/form-action.png)
 
 ```python
 from custom_admin.api import AdminSerializer, fields

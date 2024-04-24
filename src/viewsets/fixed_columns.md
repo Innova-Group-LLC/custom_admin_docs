@@ -2,7 +2,7 @@
 
 Viewset parameter `fixed_columns` allows to specify fields that will be fixed when horizontal scrolling.
 
-![fixed-columns](fixed-columns.gif)
+![fixed-columns](images/fixed-columns.gif)
 
 ## Example
 

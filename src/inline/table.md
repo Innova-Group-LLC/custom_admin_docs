@@ -6,7 +6,7 @@ Must return `InlineTableResult` instance.
 
 You can use `django.core.paginator.Paginator` for paginated response.
 
-![graph](table.png)
+![graph](images/table.png)
 
 ## Example
 

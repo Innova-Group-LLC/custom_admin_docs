@@ -11,7 +11,7 @@ AdminModelSerializer provided:
 
 ## `TranslatedModelSerializer`
 
-![translations](translations.png)
+![translations](images/translations.png)
 
 Requires library [django-modeltranslation](https://pypi.org/project/django-modeltranslation/)
 

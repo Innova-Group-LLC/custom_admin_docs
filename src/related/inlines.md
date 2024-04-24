@@ -24,7 +24,7 @@ Icon. [List](https://element.eleme.io/#/en-US/component/icon)
 - `back_relation_name`\
 Optional. It's necessary for ORM relations. You need to specify a field or lookup for the reverse filter.
 
-![related-inline](related-inline.png)
+![related-inline](images/related-inline.png)
 
 ## ORM inline
 

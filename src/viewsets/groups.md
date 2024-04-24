@@ -12,7 +12,7 @@ String name for display inside sections (tabs).
 - `fields`\
 List of serializer fields.
 
-![groups](groups.png)
+![groups](images/groups.png)
 
 ## Example
 
