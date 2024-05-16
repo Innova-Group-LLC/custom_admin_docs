@@ -16,6 +16,7 @@
   - [Serializer field options](viewsets/field_options.md)
   - [Models settings](viewsets/models_settings.md)
   - [Actions](viewsets/actions.md)
+  - [JSON Forms](viewsets/json-forms.md)
 
 - [Related inlines]()
 

@@ -20,7 +20,7 @@ A custom admin interface providing backend via DRF and frontend via Vue 2 and El
 - Access rights sharing system based on DRF permissioins
 - Related fields with autocomplete search
 - WYSIWYG editor using TinyMCE 4
-- JSON editor using CodeMirror
+- JSON editor using CodeMirror and JSONForms
 - Related fields Autocomplete and Filters using Vue Tags Input
 
 ## Links
@@ -33,3 +33,5 @@ A custom admin interface providing backend via DRF and frontend via Vue 2 and El
 [CodeMirror](https://codemirror.net/)
 
 [vue-tags-input](http://www.vue-tags-input.com)
+
+[JSONForms](https://jsonforms.io/)
