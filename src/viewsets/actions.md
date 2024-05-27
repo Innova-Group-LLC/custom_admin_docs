@@ -20,6 +20,18 @@ The text that will be displayed next to the title on the popup form.
 
 ![action-description](images/action-description.png)
 
+- `confirmation_text`\
+Text output to confirm that the action has been performed.
+
+![action-confirmation](images/action-confirmation.png)
+
+
+- `base_color`\
+Any rgb or html colors.
+
+- `variant`\
+Options: elevated, flat, tonal, outlined, text, and plain.
+
 
 ## Response messages format
 
@@ -79,6 +91,8 @@ from custom_admin.api import admin_action
 @admin_action(
     short_description=_('Send a message'),
     form_serializer=AdminSendMessageSerializer,
+    base_color='#ff3333',
+    variant='outlined',
 )
 def send_message_action(view, request, queryset, form_data):
     serializer = AdminSendMessageSerializer(data=form_data)

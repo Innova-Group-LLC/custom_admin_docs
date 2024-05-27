@@ -8,18 +8,20 @@ A custom admin interface on Vue 3 and Vuetify with DRF backend that tries to Kee
 ## Features
 
 - The web view runs on **Vue 3** using **Vuetify**
-- Pre-builded Vue SPA front page provided through html template and static files
+- Pre-builded Vue SPA front page provided through Django html template/static files
 - All endpoints run on Django Rest Framework view-set's (supports both ORM and non-ORM data sources)
-- A powerful inline system with related entities
+- A powerful inline related entities system
+- Related fields with autocomplete search
 - Support for **django-modeltranslation** translations
 - Ability to output any data within inlines (such as external logs with pagination)
-- Ability to create admin actions using forms via drf serializers
+- Ability to create inline admin actions using forms via DRF serializers
 - Dynamic system for obtaining partition scheme and interface structure
 - Access rights sharing system based on DRF permissioins
-- Related fields with autocomplete search
-- WYSIWYG editor using TinyMCE 4
+
+**Custom fields**
+- WYSIWYG editor using TinyMCE 5
 - JSON editor using CodeMirror and JSONForms
-- Related fields Autocomplete and Filters using Vue Tags Input
+- Autocomplete for related fields and filters using API
 
 # Screenshots
 
@@ -30,6 +32,10 @@ A custom admin interface on Vue 3 and Vuetify with DRF backend that tries to Kee
 **Dashboard**
 
 ![main-page](images/main-page.png)
+
+**Create view**
+
+![create-view](images/create-view.png)
 
 **Edit page**
 

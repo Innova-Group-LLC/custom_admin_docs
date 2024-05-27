@@ -10,13 +10,16 @@
 - [Viewsets]()
   
   - [Admin viewsets](viewsets/main.md)
-  - [Serializers](viewsets/serializers.md)
   - [Fixed columns](viewsets/fixed_columns.md)
-  - [Serializer field groups](viewsets/groups.md)
-  - [Serializer field options](viewsets/field_options.md)
   - [Models settings](viewsets/models_settings.md)
   - [Actions](viewsets/actions.md)
-  - [JSON Forms](viewsets/json-forms.md)
+
+- [Serializers]()
+
+  - [Serializers](serializers/serializers.md)
+  - [Serializer field groups](serializers/groups.md)
+  - [Serializer field options](serializers/field_options.md)
+  - [JSON Forms](serializers/json-forms.md)
 
 - [Related inlines]()
 
