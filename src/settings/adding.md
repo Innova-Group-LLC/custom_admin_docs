@@ -4,7 +4,7 @@ In settings.py you need to add a parameter ADMIN_URLS.
 
 View-set's are added dynamically to avoid cyclic dependencies.
 
-[Icons list](https://element.eleme.io/#/en-US/component/icon)
+[Icons list](https://pictogrammers.com/library/mdi/)
 
 ```python
 import typing

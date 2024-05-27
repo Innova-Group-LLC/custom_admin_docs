@@ -12,13 +12,6 @@ The name that will be displayed as title.
 - `form_serializer`\
 Optional parameter for action form output.
 
-- `inline_type`\
-Whether to display the button in the "Operations" section.
-
-This setting specifies the style of the button: [Button types](https://element.eleme.io/#/en-US/component/button)
-
-![action-inline](images/action-inline.png)
-
 - `inline_only`\
 If this option is enabled - the action can be executed only by pressing the button for one record.
 

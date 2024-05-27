@@ -2,9 +2,7 @@
 
 ## Tag style
 
-Option to specify a style for certain string values
-
-[Element UI reference](https://element.eleme.io/#/en-US/component/button)
+`tag_style` - option to specify a color for certain string values
 
 ![tag-search](images/tag-style.png)
 
@@ -20,7 +18,7 @@ Option to specify a style for certain string values
 
 ## Wysiwyg
 
-Option to enable TinyMCE editor.
+`wysiwyg` - option to enable TinyMCE editor.
 
 [TinyMCE link](https://www.tiny.cloud/docs-4x/demo/classic/)
 
@@ -36,12 +34,24 @@ Option to enable TinyMCE editor.
 
 ## Multiline
 
-Option to specify a text field in multiple lines.
+`multilined` - option to specify a text field in multiple lines.
 
 *Example*
 
 ```python
         extra_kwargs = {
             'note': {'multilined': True},
+        }
+```
+
+## Table image preview
+
+`list_preview` - display image inside table list.
+
+*Example*
+
+```python
+        extra_kwargs = {
+            'image': {'list_preview': True},
         }
 ```
