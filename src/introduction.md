@@ -44,6 +44,10 @@ A custom admin interface on Vue 3 and Vuetify with DRF backend that tries to Kee
 
 ![json-edit](images/json-edit.png)
 
+**Color schemes**
+
+![json-edit](images/json-edit.png)
+
 **Table page**
 
 ![table-page](images/table-page.png)
