@@ -90,3 +90,37 @@ If you have not specified this setting explicitly and you are using https, you n
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ```
+
+## Languages
+
+The LANGUAGES default setting is used to configure the languages that will be available for selection.
+
+```python
+LANGUAGES = [
+    ('ru', 'Russian'),
+    ('en', 'English'),
+]
+```
+
+### Phrases available for translation
+
+```python
+from django.utils.translation import gettext_lazy as _
+
+_('Create')
+_('Edit')
+_('Action')
+_('Admin')
+_('Section')
+_('Title')
+_('Action type')
+_('Log content')
+_('Admin action log')
+_('Admin action logs')
+_('Delete')
+_('Are you sure you want to delete the selected records?')
+_('The records have been successfully deleted!')
+_('It is not possible to delete some model instances because they are referenced via protected foreign keys: %(objects)s')
+_('Records have been successfully deleted!')
+_('The option ‘%(title)s’ is not among the available options.')
+```

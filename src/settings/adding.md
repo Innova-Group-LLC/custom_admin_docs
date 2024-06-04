@@ -27,7 +27,9 @@ ADMIN_URLS: typing.List[AdminViewSetInfo] = [
         title=_('staff'),
         icon='el-icon-service',
         views=[
-            'custom_admin.api.views.admin_log.AdminLogAdminViewSet',
+            'custom_admin.api.views.defaults.AdminLogAdminViewSet',
+            'custom_admin.api.views.defaults.GroupAdminViewSet',
+            'custom_admin.api.views.defaults.PermissionsAdminViewSet',
         ]
     ),
 ]

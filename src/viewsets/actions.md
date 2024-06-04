@@ -65,7 +65,8 @@ In `form_serializer` parameter you can pass instance of `AdminSerializer` to dis
 ![form-action](images/form-action.png)
 
 ```python
-from custom_admin.api import AdminSerializer, fields
+from custom_admin.api import fields
+from custom_admin.api.serializers import AdminSerializer
 
 class AdminSendMessageSerializer(AdminSerializer):
     message = fields.AdminPrimaryKeyRelatedField(
