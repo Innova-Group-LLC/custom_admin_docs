@@ -123,4 +123,11 @@ _('The records have been successfully deleted!')
 _('It is not possible to delete some model instances because they are referenced via protected foreign keys: %(objects)s')
 _('Records have been successfully deleted!')
 _('The option ‘%(title)s’ is not among the available options.')
+
+# Permissions:
+_('view')
+_('create')
+_('change')
+_('destroy')
+_('send_action')
 ```
