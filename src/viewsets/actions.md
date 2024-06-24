@@ -12,9 +12,6 @@ The name that will be displayed as title.
 - `form_serializer`\
 Optional parameter for action form output.
 
-- `inline_only`\
-If this option is enabled - the action can be executed only by pressing the button for one record.
-
 - `description`\
 The text that will be displayed next to the title on the popup form.
 
@@ -24,7 +21,6 @@ The text that will be displayed next to the title on the popup form.
 Text output to confirm that the action has been performed.
 
 ![action-confirmation](images/action-confirmation.png)
-
 
 - `base_color`\
 Any rgb or html colors.

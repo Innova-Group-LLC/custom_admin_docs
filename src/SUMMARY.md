@@ -31,4 +31,6 @@
   - [Table](inline/table.md)
   - [Graph](inline/graph.md)
 
-- [Admin action logs]()
+- [Permissions]()
+
+  - [Permissions](permissions/main.md)

@@ -8,11 +8,22 @@
 
 *Example*
 
+Serializer:
 ```python
     class Meta:
         model = Payment
         extra_kwargs = {
             'status': {'tag_style': TransactionStatus.get_style()},
+        }
+```
+
+Styles:
+```python
+    @classmethod
+    def get_style(cls):
+        return {
+            cls.SUCCESS.value: 'green',
+            cls.ERROR.value: 'red',
         }
 ```
 

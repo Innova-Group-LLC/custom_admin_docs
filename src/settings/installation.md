@@ -79,17 +79,28 @@ Available settings:
 Admin tab header title.\
 Used to call an api from the interface side.
 
-- `backend_prefix`\
-The endpoint by which the admin interface is accessed, where "CustomAdminView" is connected.
-Default value: "admin/".
+- `admin_prefix`\
+Path where admin page will be accessable, where `CustomAdminView` is located.\
+Default: `/admin/`
 
-Default domain retrieval: `request.build_absolute_uri('/custom_admin/')`\
-If you have not specified this setting explicitly and you are using https, you need this setting:
+- `backend_prefix`\
+The endpoint by which the admin API will be accessed from front-end, where `custom_admin.api.urls` is located.\
+Default: `/custom_admin/`
+
+If you have not specified this setting explicitly with domain and you are using https, you need this setting:
 ```python
 # Setting in case of https:
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ```
+
+- `logo_image`\
+Path for the admin logo.\
+Default: `None`
+
+- `favicon_image`\
+Path for the favicon image.\
+Default: `/static/custom_admin/favicon.ico`
 
 ## Languages
 
@@ -125,9 +136,9 @@ _('Records have been successfully deleted!')
 _('The option ‘%(title)s’ is not among the available options.')
 
 # Permissions:
-_('view')
-_('create')
-_('change')
-_('destroy')
-_('send_action')
+_('View')
+_('Create')
+_('Change')
+_('Destroy')
+_('Send action')
 ```
