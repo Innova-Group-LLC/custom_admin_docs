@@ -31,17 +31,15 @@ Options: elevated, flat, tonal, outlined, text, and plain.
 
 ## Response messages format
 
-There are several options for transferring:
-
-- String message with status code:
+`custom_admin.api.actions.action_result.ActionResult` is used for message output.
 
 ```python
-return 'Success', 200
+return ActionResult(messages=[_('Success')])
 ```
 
 - List messages with status code:
 ```python
-return ['First message', 'Last message'], 200
+return ActionResult(messages=[_('Error')], status_code=400)
 ```
 
 - `Response` or `HttpResponse` instance for custom responses:
@@ -52,6 +50,38 @@ return ['First message', 'Last message'], 200
     response['Content-Disposition'] = f'attachment; filename="{filename}"'
     f.close()
     return response
+```
+
+### Persistent message
+
+Ability to display a message to the administrator that will not be hidden automatically. html tags allowed.
+
+![form-action](images/action-persistent.png)
+
+```python
+from custom_admin.api import admin_action
+from custom_admin.api.actions.action_result import ActionResult
+from django.utils.translation import gettext as _
+
+MESSAGE = '''
+<b>Reset link:</b><br>
+{url}<br>
+<br>
+<b>Lifetime:</b> {livetime}
+'''
+
+
+@admin_action(
+    short_description=_('Получить ссылку на сброс пароля'),
+    icon='mdi-lock-outline',
+)
+def reset_password_link(view, request, queryset, *args, **kwargs) -> ActionResult:
+    ...
+    msg = MESSAGE.format(
+        url=url,
+        livetime=datetime.timedelta(seconds=lifetime),
+    )
+    return ActionResult(persistent_message=msg)
 ```
 
 ## Action form
@@ -104,12 +134,4 @@ def send_message_action(view, request, queryset, form_data):
     actions = BaseAdminViewSet.actions + [
         send_message_action,
     ]
-```
-
-## BaseAdminViewSet.actions
-
-Default actions contains:
-
-```python
-delete_action, export_csv_action
 ```

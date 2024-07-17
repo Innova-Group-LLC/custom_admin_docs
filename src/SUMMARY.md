@@ -13,6 +13,7 @@
   - [Fixed columns](viewsets/fixed_columns.md)
   - [Models settings](viewsets/models_settings.md)
   - [Actions](viewsets/actions.md)
+  - [Django import / export support](viewsets/django-import-export.md)
 
 - [Serializers]()
 

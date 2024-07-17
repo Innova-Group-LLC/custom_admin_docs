@@ -45,3 +45,7 @@ Non ORM data oriented viewset
 ## Serializers
 
 In case `serializer_class` is not specified - will be used default one with `fields = '__all__'` Meta option
+
+```admonish info
+Lines in the table can be selected with ctrl pressed.
+```

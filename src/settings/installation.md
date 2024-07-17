@@ -10,9 +10,9 @@ djangorestframework==3.14.0
 
 Optional:
 
-- `unicodecsv` - for CSV export
-- `django-modeltranslation` - for translations
-- `django-ordered-model` - for ordered models
+- `django-import-export==4.1.0` - for import/export
+- `django-modeltranslation==0.18.11` - for translations
+- `django-ordered-model==3.7.4` - for ordered models
 
 
 ## DCA installation:
