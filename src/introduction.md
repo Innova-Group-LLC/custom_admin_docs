@@ -5,6 +5,11 @@ A custom admin interface on Vue 3 and Vuetify with DRF backend that tries to Kee
 [![PyPI version](https://badge.fury.io/py/django-customvueadmin.svg)](https://badge.fury.io/py/django-customvueadmin)
 [![GitHub stars](https://img.shields.io/github/stars/Innova-Group-LLC/custom_admin)](https://github.com/Innova-Group-LLC/custom_admin)
 
+<video controls>
+  <source src="https://github.com/Innova-Group-LLC/custom_admin_docs/raw/refs/heads/master/src/admin-panel.mp4" type="video/mp4">
+</video>
+
+
 ### Features
 
 - Interface for [DRF](https://www.django-rest-framework.org/) API based on **[Vue 3](https://vuejs.org/)** and **[Vuetify](https://vuetifyjs.com/)**
